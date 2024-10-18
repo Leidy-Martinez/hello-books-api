@@ -1,6 +1,10 @@
 from flask import Blueprint
 
-hello_world_bp = Blueprint("hello_world", __name__)
+hello_world_bp = Blueprint({
+        "name": "Ada Lovelace",
+        "message": "Hello!",
+        "hobbies": ["Fishing", "Swimming", "Watching Reality Shows"]
+    }, __name__)
 
 # #@hello_world_bp.get("/")
 # def say_hello_world():
